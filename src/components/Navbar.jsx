@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center gap-3 text-2xl font-bold tracking-tighter">
-          <img src="/profile.jpg" alt="Arya" className="w-8 h-8 rounded-full border border-blue-500/50 object-cover object-top" />
+          <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Arya" className="w-8 h-8 rounded-full border border-blue-500/50 object-cover object-top" />
           <span>Arya<span className="text-blue-500">.</span></span>
         </a>
 

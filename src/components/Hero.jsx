@@ -57,7 +57,7 @@ export default function Hero() {
                whileHover={{ scale: 1.1, rotate: 5 }}
                className="w-32 h-32 md:w-44 md:h-44 rounded-full border-2 border-blue-500/50 p-1 bg-black/50 backdrop-blur-xl overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.6)]"
             >
-              <img src="/profile.jpg" alt="Arya" className="w-full h-full object-cover object-top rounded-full" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Arya" className="w-full h-full object-cover object-top rounded-full" />
             </motion.div>
           </div>
           <p className="text-sm md:text-base font-medium tracking-[0.4em] text-blue-400 uppercase">Hello, I am</p>
@@ -88,7 +88,7 @@ export default function Hero() {
             Contact Me
           </a>
           <a
-            href="/My_Resume (4).pdf"
+            href={`${import.meta.env.BASE_URL}My_Resume (4).pdf`}
             download="Arya_Kompalwar_Resume.pdf"
             className="px-6 md:px-8 py-3 border border-blue-500/50 text-blue-400 font-semibold rounded-full hover:bg-blue-500/10 transition-colors duration-300 transform hover:-translate-y-1 text-sm md:text-base"
           >

@@ -17,7 +17,7 @@ export default function About() {
           <div className="relative glass-card rounded-3xl overflow-hidden aspect-[4/5] p-2">
              <div className="h-full w-full rounded-2xl overflow-hidden shadow-2xl">
                <img 
-                 src="/profile.jpg" 
+                 src={`${import.meta.env.BASE_URL}profile.jpg`} 
                  alt="Arya Kompalwar" 
                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                />
