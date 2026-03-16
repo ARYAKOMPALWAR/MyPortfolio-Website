@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6; 
+  --color-secondary: #10b981;
+}
+
+body {
+  @apply bg-black text-gray-200 antialiased selection:bg-blue-500/30;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl shadow-black/50 rounded-2xl;
+}
+
+.glass-nav {
+  @apply bg-black/50 backdrop-blur-md border-b border-white/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400;
+}
+
+.glow-effect {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(59,130,246,0.3) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
